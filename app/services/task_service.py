@@ -1,7 +1,5 @@
 from pydantic import BaseModel, Field
 
-
-
 from app.integrations.interface_bitrix_client import BitrixClientInterface
 
 

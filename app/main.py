@@ -1,20 +1,7 @@
-from functools import lru_cache
-from typing import Annotated
-
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-
 from app.api.v1.router import all_routers
-from app.config.config import Settings, settings
-
-
-# @lru_cache
-# def get_settings() -> Settings:
-#     return Settings()
-
-
-print("Settings loaded:", settings.dict())
 
 
 def get_application() -> FastAPI:

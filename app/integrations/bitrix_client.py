@@ -1,7 +1,5 @@
 import json
-import time
 import base64
-from typing import Optional, AsyncGenerator
 from requests import post, adapters, exceptions
 from urllib.parse import urlencode
 
